@@ -60,6 +60,18 @@ def main():
                 if tipo in ("materia","roteiro","redes"):
                     (OUT/f"{prefixo}-{tipo}.md").write_text(conteudo.strip()+"\n",encoding="utf-8")
             feitos+=1
+        except urllib.error.HTTPError as e:
+            # Nunca imprimir corpo da resposta, headers ou URL: podem conter dados sensíveis.
+            explicacoes = {
+                400: "pedido rejeitado; rever parâmetros do modelo",
+                401: "autenticação recusada; conferir a chave API",
+                403: "acesso negado; verificar permissões ou região",
+                404: "modelo ou endpoint indisponível",
+                429: "limite de utilização atingido",
+                500: "falha temporária no serviço",
+                503: "serviço temporariamente indisponível",
+            }
+            print(f"Pauta {i}: Gemini HTTP {e.code} — {explicacoes.get(e.code, 'erro de API')}; mantidos rascunhos simples.")
         except (urllib.error.URLError, ValueError, KeyError, json.JSONDecodeError, TimeoutError) as e:
             print(f"Pauta {i}: IA indisponível ({type(e).__name__}); mantidos rascunhos simples.")
     with (OUT/"LEIA-ME.md").open("a",encoding="utf-8") as arq:
