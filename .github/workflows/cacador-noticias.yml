@@ -25,6 +25,10 @@ jobs:
         run: python agentes/editor_verificador.py
       - name: Preparar rascunhos de pautas aprovadas
         run: python agentes/jornalista.py
+      - name: Melhorar rascunhos com Gemini (opcional)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python agentes/jornalista_ia.py
       - name: Guardar relatorio para revisao
         if: always()
         uses: actions/upload-artifact@v4
