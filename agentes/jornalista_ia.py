@@ -63,7 +63,20 @@ def gerar(chave, modelo, pauta):
             break
         except urllib.error.HTTPError as erro:
             ultimo_erro = erro
+            # Extrair apenas campos conhecidos do erro da API, sem headers, URL ou chave.
+            detalhe = ""
+            try:
+                corpo = json.loads(erro.read(8192).decode("utf-8"))
+                api_erro = corpo.get("error", {})
+                mensagem = str(api_erro.get("message", ""))
+                # Nunca registar mensagens que contenham credenciais.
+                if chave not in mensagem:
+                    detalhe = mensagem[:350].replace("\\n", " ")
+            except (ValueError, UnicodeError, AttributeError):
+                pass
             print(f"Gemini: tentativa {versao} retornou HTTP {erro.code}.")
+            if detalhe:
+                print(f"Gemini: detalhe da API: {detalhe}")
             if erro.code != 404:
                 raise
     else:
