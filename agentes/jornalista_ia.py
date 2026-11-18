@@ -52,7 +52,7 @@ def gerar(chave, modelo, pauta):
     payload = json.dumps({"contents":[{"parts":[{"text":prompt}]}],
         "generationConfig":{"responseMimeType":"application/json","temperature":0.3,"maxOutputTokens":2600}}).encode()
     req = urllib.request.Request(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent",
+        f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=payload, headers={"Content-Type":"application/json","x-goog-api-key":chave},method="POST")
     with urllib.request.urlopen(req, timeout=55) as resp:
         raw = json.load(resp)
