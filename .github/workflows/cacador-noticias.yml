@@ -1,0 +1,31 @@
+name: Radar GTA 6 - Cacador de Noticias
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 12 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Coletar noticias
+        run: python agentes/cacador_noticias.py
+      - name: Guardar relatorio para revisao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-gta6-noticias
+          path: relatorios/
+          if-no-files-found: warn
+          retention-days: 7
