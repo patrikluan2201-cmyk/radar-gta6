@@ -1,4 +1,22 @@
 {
   "instrucoes": "Só incluir pautas após conferência humana de fontes primárias. Alterar status para APROVADO somente depois da checagem. Este arquivo começa sem pautas.",
-  "pautas": []
+  "pautas": [
+    {
+      "titulo": "GTA 6 chega em 19 de novembro: data, plataformas e protagonistas confirmados pela Rockstar",
+      "slug": "gta6-lancamento-19-novembro-2026",
+      "status": "APROVADO",
+      "fatos_verificados": [
+        "A Rockstar Games confirmou que Grand Theft Auto VI tem lançamento previsto para quinta-feira, 19 de novembro de 2026.",
+        "O jogo está anunciado para PlayStation 5 e Xbox Series X|S.",
+        "A história acompanha Jason e Lucia em Vice City e no estado fictício de Leonida.",
+        "A Rockstar disponibilizou reservas antecipadas e conteúdos oficiais sobre o jogo.",
+        "A data anunciada é uma previsão de lançamento oficial; no momento desta pauta, o jogo ainda não foi lançado."
+      ],
+      "fontes_primarias": [
+        "https://www.rockstargames.com/VI",
+        "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "https://ir.take2games.com/node/32676"
+      ]
+    }
+  ]
 }
