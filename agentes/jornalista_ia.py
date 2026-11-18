@@ -51,11 +51,23 @@ def gerar(chave, modelo, pauta):
     )
     payload = json.dumps({"contents":[{"parts":[{"text":prompt}]}],
         "generationConfig":{"responseMimeType":"application/json","temperature":0.3,"maxOutputTokens":2600}}).encode()
-    req = urllib.request.Request(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
-        data=payload, headers={"Content-Type":"application/json","x-goog-api-key":chave},method="POST")
-    with urllib.request.urlopen(req, timeout=55) as resp:
-        raw = json.load(resp)
+    # Testar primeiro a API estável; em caso de 404, tentar a versão beta.
+    ultimo_erro = None
+    for versao in ("v1", "v1beta"):
+        req = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/{versao}/models/{modelo}:generateContent",
+            data=payload, headers={"Content-Type":"application/json","x-goog-api-key":chave},method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=55) as resp:
+                raw = json.load(resp)
+            break
+        except urllib.error.HTTPError as erro:
+            ultimo_erro = erro
+            print(f"Gemini: tentativa {versao} retornou HTTP {erro.code}.")
+            if erro.code != 404:
+                raise
+    else:
+        raise ultimo_erro
     txt = "".join(part.get("text","") for cand in raw.get("candidates",[]) for part in cand.get("content",{}).get("parts",[]))
     obj = json.loads(txt)
     if not all(isinstance(obj.get(k),str) and len(obj[k])>70 and "RASCUNHO" in obj[k] for k in ("materia","roteiro","redes")):
