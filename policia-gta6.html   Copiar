@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uma polícia mais inteligente? | Radar GTA 6</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #080b14; color: #f5f7ff; font-family: Arial, sans-serif; line-height: 1.7; }
+    header { background: #101421; border-bottom: 2px solid #a5ff49; padding: 22px 7%; }
+    .logo { color: #a5ff49; font-size: 25px; font-weight: 900; text-decoration: none; }
+    main { max-width: 900px; margin: 55px auto; padding: 0 22px; }
+    .tag { color: #a5ff49; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.12; margin: 18px 0; }
+    .intro { color: #c5cbe0; font-size: 21px; }
+    img { width: 100%; border-radius: 16px; margin: 25px 0; display: block; }
+    h2 { color: #a5ff49; margin-top: 35px; }
+    p { font-size: 18px; }
+    .button { display: inline-block; margin: 35px 0; background: #a5ff49; color: #080b14; padding: 14px 24px; border-radius: 9px; font-weight: bold; text-decoration: none; }
+    footer { text-align: center; padding: 25px; color: #9ba3bb; border-top: 1px solid #252b3d; }
+  </style>
+</head>
+<body>
+  <header><a class="logo" href="index.html">🎮 RADAR GTA 6</a></header>
+  <main>
+    <div class="tag">EXPECTATIVAS • GTA VI</div>
+    <h1>Uma polícia mais inteligente em GTA VI?</h1>
+    <p class="intro">Perseguições mais dinâmicas, estratégias policiais e reações realistas: o que a comunidade espera do próximo Grand Theft Auto.</p>
+    <img src="persegui%C3%A7%C3%B5es.png" alt="Arte ilustrativa de uma perseguição policial em Vice City">
+    <p>Um dos elementos mais marcantes da série Grand Theft Auto é o sistema de procurado. Desde as primeiras estrelas até às perseguições mais intensas, fugir da polícia sempre fez parte da experiência.</p>
+    <h2>O que poderia mudar?</h2>
+    <p>Imagine policiais capazes de coordenar bloqueios, adaptar rotas e reagir de maneira diferente às decisões do jogador. Um sistema assim poderia tornar cada perseguição mais imprevisível.</p>
+    <h2>Uma cidade que reage às suas ações</h2>
+    <p>Outra possibilidade seria uma polícia que utilizasse melhor o ambiente: helicópteros, viaturas de apoio e diferentes estratégias conforme a região da cidade.</p>
+    <h2>O que já está confirmado?</h2>
+    <p>Essas ideias são expectativas e especulações da comunidade, não funcionalidades confirmadas pela Rockstar Games. Ainda precisamos de informações oficiais para saber como será o sistema policial de GTA VI.</p>
+    <h2>E você, o que espera?</h2>
+    <p>Gostaria de ver perseguições mais difíceis ou prefere um sistema policial mais divertido e acessível? O debate está aberto entre os fãs.</p>
+    <a class="button" href="index.html">← VOLTAR AO RADAR</a>
+  </main>
+  <footer>© 2026 Radar GTA 6 — Projeto independente, sem afiliação com a Rockstar Games.</footer>
+</body>
+</html>
