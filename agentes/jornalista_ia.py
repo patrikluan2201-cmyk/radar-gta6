@@ -10,9 +10,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "relatorios" / "rascunhos"
 INPUT = ROOT / "agentes" / "aprovados.json"
-MODEL = "gemini-2.5-flash"
+PREFERIDOS = ("gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash")
 
-def gerar(chave, pauta):
+def escolher_modelo(chave):
+    req = urllib.request.Request(
+        "https://generativelanguage.googleapis.com/v1beta/models?pageSize=100",
+        headers={"x-goog-api-key": chave})
+    with urllib.request.urlopen(req, timeout=25) as resp:
+        dados = json.load(resp)
+    modelos = [
+        m.get("name", "").removeprefix("models/")
+        for m in dados.get("models", [])
+        if "generateContent" in m.get("supportedGenerationMethods", [])
+    ]
+    for preferido in PREFERIDOS:
+        if preferido in modelos:
+            return preferido
+    candidatos = [m for m in modelos if m.startswith("gemini-") and "embedding" not in m and "image" not in m and "tts" not in m]
+    if not candidatos:
+        raise ValueError("nenhum modelo Gemini com generateContent disponível para esta chave")
+    return candidatos[0]
+
+
+def gerar(chave, modelo, pauta):
     fatos = pauta["fatos_verificados"]
     fontes = pauta["fontes_primarias"]
     prompt = (
@@ -47,6 +67,15 @@ def main():
     if not key:
         print("Gemini não configurado: mantendo rascunhos simples.")
         return
+    try:
+        modelo = escolher_modelo(key)
+        print(f"Gemini: modelo disponível selecionado: {modelo}")
+    except urllib.error.HTTPError as e:
+        print(f"Gemini: falha ao listar modelos (HTTP {e.code}); mantendo rascunhos simples.")
+        return
+    except (urllib.error.URLError, ValueError, TimeoutError) as e:
+        print(f"Gemini: não foi possível selecionar modelo ({type(e).__name__}); mantendo rascunhos simples.")
+        return
     aprovados = json.loads(INPUT.read_text(encoding="utf-8")).get("pautas",[])
     feitos = 0
     for i,pauta in enumerate(aprovados,1):
@@ -55,7 +84,7 @@ def main():
         slug = re.sub(r"[^a-z0-9-]+","-",str(pauta.get("slug") or pauta.get("titulo","")).lower()).strip("-")[:60] or "materia"
         prefixo = f"{i:02d}-{slug}"
         try:
-            resultado = gerar(key,pauta)
+            resultado = gerar(key,modelo,pauta)
             for tipo,conteudo in resultado.items():
                 if tipo in ("materia","roteiro","redes"):
                     (OUT/f"{prefixo}-{tipo}.md").write_text(conteudo.strip()+"\n",encoding="utf-8")
