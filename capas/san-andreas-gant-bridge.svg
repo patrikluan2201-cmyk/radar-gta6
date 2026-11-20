@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Capa ilustrada: GANT BRIDGE">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#13122a"/><stop offset=".56" stop-color="#272045"/><stop offset="1" stop-color="#101c32"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc766"/><stop offset="1" stop-color="#ff967c"/></linearGradient>
+<linearGradient id="egg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0a5"/><stop offset=".7" stop-color="#fa9ca3"/><stop offset="1" stop-color="#ff967c"/></linearGradient>
+<linearGradient id="shade" x1="0" x2="1"><stop stop-color="#0b0e1e" stop-opacity=".84"/><stop offset=".58" stop-color="#0b0e1e" stop-opacity=".42"/><stop offset="1" stop-color="#0b0e1e" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#fff" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="1100" cy="0" r="325" fill="#ff967c" opacity=".12"/>
+<g transform="translate(700 119)"><circle cx="360" cy="80" r="120" fill="#ffd394" opacity=".85"/><path d="M-30 380h590v165H-30z" fill="#101b34"/><g fill="none" stroke="#ff7a7d" stroke-width="14"><path d="M95 435V36M435 435V36"/><path d="M-20 255q170 225 340 0t290 0"/><path d="M-30 435H580"/></g><g stroke="#ff9989" stroke-width="6"><path d="M-20 255V435M40 335v100M95 378v57M155 393v42M215 365v70M280 290v145M340 268v167M385 325v110M435 373v62M495 387v48M550 339v96"/></g><path d="M-40 535h660" stroke="#3bb1ca" stroke-width="15"/></g>
+<rect width="1200" height="675" fill="url(#shade)"/>
+<path d="M0 0h1200" stroke="#ff967c" stroke-width="13"/>
+<text x="65" y="98" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="28" fill="#ff967c" letter-spacing="4">RADAR GTA 6</text>
+<path d="M65 116h305" stroke="#ff967c" stroke-width="5" opacity=".9"/>
+<text x="65" y="222" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" fill="#ffffff" opacity=".83" letter-spacing="3">EASTER EGG • SAN ANDREAS</text>
+<text x="58" y="365" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="83" fill="#ffffff" letter-spacing="-2">GANT</text>
+<text x="58" y="460" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="83" fill="#ff967c" letter-spacing="-2">BRIDGE</text>
+<path d="M65 505h445" stroke="#ffc766" stroke-width="5" opacity=".7"/>
+<text x="65" y="568" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#e3e5f3" letter-spacing="1">NOTÍCIAS, SEGREDOS E CULTURA GAMER</text>
+<rect x="65" y="602" width="232" height="37" rx="18" fill="#ff967c"/>
+<text x="181" y="627" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="16" fill="#131525" text-anchor="middle" letter-spacing="2">LEIA NO PORTAL</text>
+</svg>
