@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://patrikluan2201-cmyk.github.io/radar-gta6/sitemap.xml
