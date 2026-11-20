@@ -188,6 +188,18 @@ footer {
   nav { gap: 15px; }
 }
 .cover-art{width:100%;height:auto;aspect-ratio:16 / 9;object-fit:cover;display:block;background:#161a2a}
+
+/* Redes sociais do portal */
+nav .social-nav{display:inline-flex;align-items:center;gap:7px;color:#fff;font-weight:700}
+nav .social-nav:hover{color:var(--pink)}
+.social-follow{border:1px solid #383351;border-radius:20px;background:linear-gradient(130deg,#23162f,#151b34);padding:37px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.social-follow p{color:var(--muted);line-height:1.6;max-width:560px;margin:10px 0 0}
+.social-follow h2{margin:0;font-size:clamp(25px,4vw,33px)}
+.social-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(105deg,#e23e95,#ff8e6c);border-radius:10px;color:#151320;padding:15px 22px;font-size:16px;font-weight:900;transition:transform .2s}
+.social-button:hover{transform:translateY(-3px)}
+footer .footer-social{display:inline-flex;align-items:center;gap:8px;color:#ff94c9;font-weight:700;margin-top:12px}
+footer .footer-social:hover{text-decoration:underline}
+@media(max-width:600px){.social-follow{padding:27px 22px}.social-button{width:100%}}
 </style>
 </head>
 <body>
@@ -198,6 +210,7 @@ footer {
     <a href="#noticias">Notícias</a>
     <a href="#segredos">Easter eggs</a>
     <a href="#videos">Vídeos</a>
+    <a class="social-nav" href="https://www.instagram.com/radargtavi_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Radar GTA 6"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
   </nav>
 </header>
 
@@ -282,11 +295,23 @@ footer {
       <p>Em breve, os Shorts e vídeos do Radar GTA 6 estarão aqui.</p>
     </div>
   </section>
+
+  <section class="container" id="redes">
+    <div class="social-follow">
+      <div>
+        <div class="eyebrow">Conecte-se ao radar</div>
+        <h2>SIGA O <span>RADAR GTA 6</span></h2>
+        <p>Curiosidades, easter eggs e novidades do universo GTA também no nosso Instagram. Acompanhe o portal e participe da comunidade!</p>
+      </div>
+      <a class="social-button" href="https://www.instagram.com/radargtavi_/" target="_blank" rel="noopener noreferrer" aria-label="Seguir @radargtavi_ no Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> SEGUIR @RADARGTAVI_</a>
+    </div>
+  </section>
 </main>
 
 <footer>
   © 2026 Radar GTA 6 — Feito por fãs, para fãs.
   <p>Projeto independente, sem afiliação com a Rockstar Games.</p>
+  <a class="footer-social" href="https://www.instagram.com/radargtavi_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial do Radar GTA 6"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram · @radargtavi_</a>
 </footer>
 </body>
 </html>
