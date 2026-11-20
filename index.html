@@ -5,7 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Radar GTA 6: notícias, teorias, vídeos e novidades sobre GTA VI.">
-<title>Radar GTA 6 | Seu radar de Vice City</title>
+<title>Radar GTA 6 | Notícias, segredos e easter eggs</title>
+<meta name="theme-color" content="#080a12">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://patrikluan2201-cmyk.github.io/radar-gta6/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Radar GTA 6">
+<meta property="og:title" content="Radar GTA 6 | Notícias, segredos e easter eggs">
+<meta property="og:description" content="Notícias de GTA VI, segredos de Vice City e guias de easter eggs do universo Grand Theft Auto.">
+<meta property="og:url" content="https://patrikluan2201-cmyk.github.io/radar-gta6/">
+<meta property="og:image" content="https://patrikluan2201-cmyk.github.io/radar-gta6/Radar%20GTA%206_%20Neon%20de%20Vice%20City.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radar GTA 6 | Notícias, segredos e easter eggs">
+<meta name="twitter:image" content="https://patrikluan2201-cmyk.github.io/radar-gta6/Radar%20GTA%206_%20Neon%20de%20Vice%20City.png">
+<link rel="preconnect" href="https://www.youtube-nocookie.com">
+
 <style>
 :root {
   --bg: #080a12;
@@ -205,6 +221,49 @@ nav .social-nav:hover{color:var(--pink)}
 footer .footer-social{display:inline-flex;align-items:center;gap:8px;color:#ff94c9;font-weight:700;margin-top:12px}
 footer .footer-social:hover{text-decoration:underline}
 @media(max-width:600px){.social-follow{padding:27px 22px}.social-button{width:100%}}
+
+/* Interface editorial 2.0 — navegação, pesquisa e destaques */
+nav{align-items:center;row-gap:12px;column-gap:16px}
+nav a{font-size:14px;font-weight:700}
+nav a:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.site-search{padding-top:34px;padding-bottom:25px}
+.search-panel{background:linear-gradient(120deg,#1e2136,#151729);border:1px solid #394058;border-radius:18px;padding:26px}
+.search-panel h2{font-size:25px;margin:0 0 10px}
+.search-form{display:flex;gap:10px;margin-top:17px}
+.search-form input{background:#070b15;color:#fff;border:1px solid #51566f;border-radius:10px;padding:15px 16px;flex:1;min-width:0;font-size:16px}
+.search-clear{background:#323750;color:#fff;border:1px solid #616987;border-radius:10px;padding:10px 15px;cursor:pointer;font-weight:bold}
+.filter-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.filter-chips button{border:1px solid #46506a;color:#e5e8f3;background:#252941;cursor:pointer;padding:10px 15px;border-radius:30px;font-weight:700;font-size:14px}
+.filter-chips button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#09130d}
+.filter-chips button:hover{border-color:var(--green)}
+.search-summary{color:var(--muted);font-size:14px;margin:13px 0 0}
+[hidden]{display:none!important}
+.no-results{padding:25px;border-radius:12px;background:#1b2137;color:#fff;margin-top:20px}
+.section-eyebrow{color:var(--pink);font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase;display:inline-block;margin-bottom:12px}
+.new-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.feature-story{border-color:#a7f65b;position:relative;box-shadow:0 9px 40px #b1ff5010}
+.feature-story::before{content:"MATÉRIA EM DESTAQUE";position:absolute;z-index:2;top:12px;left:12px;background:#b1ff50;color:#111a12;border-radius:5px;font-size:11px;font-weight:900;padding:8px 12px;letter-spacing:1px}
+.feature-story h3{font-size:clamp(24px,3vw,31px)}
+.story-card{transition:transform .2s,border-color .2s,box-shadow .2s}
+.story-card:hover{border-color:#a5f354;box-shadow:0 10px 35px #0005}
+.story-card .cover-art{display:block}
+.spotlight{display:grid;grid-template-columns:1fr 1fr;background:linear-gradient(120deg,#301c44,#121d32);border:1px solid #75467a;border-radius:18px;overflow:hidden;margin-bottom:30px}
+.spotlight img{display:block;width:100%;height:100%;object-fit:cover}
+.spotlight-copy{padding:25px 30px;align-self:center}
+.spotlight-copy h3{font-size:clamp(22px,3.2vw,32px);margin:10px 0 12px}
+.spotlight-copy p{color:var(--muted);line-height:1.65}
+.spotlight-copy a{display:inline-block;color:var(--green);font-weight:900;border-bottom:2px solid var(--green);padding-bottom:5px}
+.video-feature{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:center;text-align:left}
+.video-player{aspect-ratio:16 / 9;position:relative;border-radius:13px;overflow:hidden;background:#0e0f22}
+.video-player img{display:block;width:100%;height:100%;object-fit:cover}
+.video-player iframe{display:block;width:100%;height:100%;border:0}
+.play-video{position:absolute;inset:0;display:grid;place-items:center;width:100%;height:100%;background:#0004;border:0;color:#fff;cursor:pointer;font-weight:900;font-size:20px}
+.play-video span{background:#eb355d;border-radius:14px;padding:13px 23px;box-shadow:0 10px 25px #0007}
+.video-feature a{color:var(--green);font-weight:700}
+.video-feature small{display:block;margin-top:8px;color:#acb5c9}
+.card[href]{height:100%}
+@media(max-width:800px){.new-grid,.spotlight,.video-feature{grid-template-columns:1fr}.spotlight img{max-height:250px}.site-search{padding-top:22px}.search-panel{padding:20px}.feature-story::before{top:10px;left:10px}}
+@media(max-width:520px){.hero{padding:65px 6%}.container{padding:43px 17px}.search-form{flex-direction:column}.filter-chips button{font-size:12px;padding:9px 11px}.spotlight-copy{padding:22px}.card-body{padding:19px}header{padding:16px 14px}nav{gap:11px}}
 </style>
 </head>
 <body>
@@ -213,6 +272,7 @@ footer .footer-social:hover{text-decoration:underline}
   <nav>
     <a href="#inicio">Início</a>
     <a href="#noticias">Notícias</a>
+    <a href="#busca">Buscar</a>
     <a href="#segredos">Easter eggs</a>
     <a href="#videos">Vídeos</a>
     <a class="social-nav" href="https://www.instagram.com/radargtavi_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Radar GTA 6"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
@@ -231,64 +291,95 @@ footer .footer-social:hover{text-decoration:underline}
     </div>
   </section>
 
+
+  <section class="container site-search" id="busca" aria-labelledby="busca-titulo">
+    <div class="search-panel">
+      <div class="section-eyebrow">ENCONTRE SUA PRÓXIMA DESCOBERTA</div>
+      <h2 id="busca-titulo">O QUE VOCÊ QUER <span>ENCONTRAR?</span></h2>
+      <div class="search-form" role="search">
+        <input id="story-search" type="search" autocomplete="off" placeholder="Busque por Vice City, mapa, OVNI, GTA V..." aria-label="Buscar matérias do Radar GTA 6">
+        <button id="search-clear" class="search-clear" type="button" hidden>Limpar</button>
+      </div>
+      <div class="filter-chips" role="group" aria-label="Filtrar matérias por assunto">
+        <button type="button" data-filter="tudo" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="gta6" aria-pressed="false">GTA VI</button>
+        <button type="button" data-filter="vicecity" aria-pressed="false">Vice City</button>
+        <button type="button" data-filter="gtav" aria-pressed="false">GTA V</button>
+        <button type="button" data-filter="sanandreas" aria-pressed="false">San Andreas</button>
+        <button type="button" data-filter="misterios" aria-pressed="false">Mistérios</button>
+      </div>
+      <p class="search-summary" id="search-result" aria-live="polite">9 matérias encontradas</p>
+    </div>
+    <p id="no-results" class="no-results" hidden>Nenhuma matéria encontrada. Experimente outro termo ou escolha “Todos”.</p>
+  </section>
   <section class="container" id="noticias">
     <h2>ÚLTIMAS DO <span>RADAR</span></h2>
     <div class="grid new-grid">
-<a class="card" href="gta6-lancamento-oficial.html">
+<a class="card story-card feature-story" href="gta6-lancamento-oficial.html" data-categories="gta6" data-keywords="gta6 lancamento rockstar playstation xbox 2026 noticia">
   <img class="cover-art" src="capas/gta6-lancamento.svg" alt="Capa ilustrada sobre o lançamento de GTA VI" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">Notícia oficial • 20/11</div><h3>GTA VI já está disponível!</h3><p>A Rockstar confirmou o lançamento em 19 de novembro. Saiba as plataformas e os detalhes oficiais.</p></div>
 </a>
-<a class="card" href="gta6-mapa-oficial-leonida.html">
+<a class="card story-card" href="gta6-mapa-oficial-leonida.html" data-categories="gta6" data-keywords="mapa leonida poster rockstar">
   <img class="cover-art" src="capas/gta6-mapa-leonida.svg" alt="Capa ilustrada do mapa de Leonida" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">Notícia oficial • 20/11</div><h3>Mapa oficial de Leonida para impressão</h3><p>Veja onde acessar o mapa e o pôster disponibilizados pela Rockstar.</p></div>
 </a>
 </div>
-<h3 class="subheading">ANTES DO LANÇAMENTO: EXPECTATIVAS DA COMUNIDADE</h3>
+<h3 class="subheading">ARQUIVO: EXPECTATIVAS DA COMUNIDADE ANTES DO LANÇAMENTO</h3>
 <div class="grid">
-      <article class="card" onclick="window.location.href='policia-gta6.html'" style="cursor:pointer;">
+      <a class="card story-card" href="policia-gta6.html" data-categories="gta6" data-keywords="policia perseguição inteligencia artificial expectativas">
         <img src="persegui%C3%A7%C3%B5es.png" alt="Perseguição policial em Vice City" style="width:100%;height:180px;object-fit:cover;display:block;">
         <div class="card-body">
           <div class="tag">Expectativas</div>
           <h3>Uma polícia mais inteligente?</h3>
           <p>O que esperamos da inteligência artificial e das perseguições em GTA VI.</p>
         </div>
-      </article>
-      <article class="card" onclick="window.location.href='vice-city.html'" style="cursor:pointer;">
+      </a>
+      <a class="card story-card" href="vice-city.html" data-categories="gta6 vicecity" data-keywords="vice city mundo praias cidade exploracao">
         <img src="explorando%20vice.png" alt="Vista cinematográfica de Vice City" style="width:100%;height:180px;object-fit:cover;display:block;">
         <div class="card-body">
           <div class="tag">Exploração</div>
           <h3>O mundo de Vice City</h3>
           <p>Praias, cidades, estradas e possibilidades para explorar.</p>
         </div>
-      </article>
-      <article class="card" onclick="window.location.href='quatro-coisas-gta6.html'" style="cursor:pointer;">
+      </a>
+      <a class="card story-card" href="quatro-coisas-gta6.html" data-categories="gta6" data-keywords="desejos comunidade possibilidades expectativas">
         <img src="O%20que%20esperamos%20de%20GTA%20VI.png" alt="O que esperamos de GTA VI" style="width:100%;height:180px;object-fit:cover;display:block;">
         <div class="card-body">
           <div class="tag">Comunidade</div>
           <h3>Quatro coisas que queremos ver</h3>
           <p>As expectativas que estão movimentando os fãs de GTA VI.</p>
         </div>
-      </article>
+      </a>
     </div>
   </section>
 
 <section class="container" id="segredos">
   <h2>SEGREDOS E <span>EASTER EGGS</span></h2>
   <p style="color:var(--muted);font-size:18px;margin-top:-12px;margin-bottom:25px">Guias para encontrar lugares escondidos nos jogos clássicos da franquia GTA.</p>
+
+  <div class="spotlight">
+    <img src="capas/vice-city-ovo-secreto.svg" alt="Arte ilustrativa do ovo secreto do edifício da VCN" width="1200" height="675" loading="lazy">
+    <div class="spotlight-copy">
+      <span class="section-eyebrow">SEGREDO DA SEMANA • GTA VICE CITY</span>
+      <h3>Você já encontrou o ovo escondido no prédio da VCN?</h3>
+      <p>Uma janela aparentemente normal leva Tommy Vercetti a um dos segredos mais divertidos do GTA clássico. Descubra onde fica e como entrar.</p>
+      <a href="vice-city-sala-ovo-pascoa.html">DESCUBRA O CAMINHO →</a>
+    </div>
+  </div>
   <div class="grid secrets-grid">
-<a class="card" href="vice-city-sala-ovo-pascoa.html">
+<a class="card story-card" href="vice-city-sala-ovo-pascoa.html" data-categories="vicecity misterios" data-keywords="vc news downtown ovo de pascoa vcn easter egg">
   <img class="cover-art" src="capas/vice-city-ovo-secreto.svg" alt="Capa ilustrada do ovo de Páscoa escondido no prédio da VCN" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">Vice City • Segredo</div><h3>O ovo de Páscoa escondido da VCN</h3><p>Onde fica a janela secreta de Downtown e como entrar na sala do ovo de chocolate.</p></div>
 </a>
-<a class="card" href="vice-city-apartamento-3c.html">
+<a class="card story-card" href="vice-city-apartamento-3c.html" data-categories="vicecity misterios" data-keywords="scarface ocean beach apartamento motosserra">
   <img class="cover-art" src="capas/vice-city-apartamento-3c.svg" alt="Capa ilustrada do misterioso apartamento 3C em Vice City" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">Vice City • Cinema</div><h3>Apartamento 3C e a homenagem a Scarface</h3><p>O caminho até o banheiro secreto com motosserra em Ocean Beach.</p></div>
 </a>
-<a class="card" href="gta5-fantasma-ovnis.html">
+<a class="card story-card" href="gta5-fantasma-ovnis.html" data-categories="gtav misterios" data-keywords="mount gordo fantasma jolene ovnis chiliad gta v">
   <img class="cover-art" src="capas/gta5-fantasma-ovnis.svg" alt="Capa ilustrada do fantasma e dos OVNIs de GTA V" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">GTA V • Guia</div><h3>Fantasma e OVNIs: locais e horários</h3><p>Mount Gordo, Mount Chiliad e o disco voador submerso: como encontrar cada um.</p></div>
 </a>
-<a class="card" href="san-andreas-gant-bridge-segredo.html">
+<a class="card story-card" href="san-andreas-gant-bridge-segredo.html" data-categories="sanandreas misterios" data-keywords="gan bridge ponte placa segredo san fierro">
   <img class="cover-art" src="capas/san-andreas-gant-bridge.svg" alt="Capa ilustrada da Gant Bridge em GTA San Andreas" width="1200" height="675" loading="lazy">
   <div class="card-body"><div class="tag">San Andreas • Segredo</div><h3>A placa escondida na Gant Bridge</h3><p>Descubra a mensagem que a Rockstar deixou no alto da ponte de San Fierro.</p></div>
 </a>
@@ -297,9 +388,18 @@ footer .footer-social:hover{text-decoration:underline}
 
   <section class="container" id="videos">
     <h2>RADAR EM <span>VÍDEO</span></h2>
-    <div class="video-box">
-      <h3>▶ Nossos vídeos estão chegando!</h3>
-      <p>Em breve, os Shorts e vídeos do Radar GTA 6 estarão aqui.</p>
+    <div class="video-box video-feature">
+      <div class="video-player" id="video-player">
+        <img src="capas/gta6-lancamento.svg" alt="Capa de destaque do universo GTA VI" width="1200" height="675" loading="lazy">
+        <button class="play-video" id="play-video" type="button" aria-label="Reproduzir vídeo oficial Grand Theft Auto VI: An Extended Look"><span>▶ ASSISTIR</span></button>
+      </div>
+      <div>
+        <div class="section-eyebrow">VÍDEO OFICIAL • ROCKSTAR GAMES</div>
+        <h3>Grand Theft Auto VI: An Extended Look</h3>
+        <p>Assista à apresentação oficial da Rockstar Games e explore mais detalhes de Leonida. O vídeo é da desenvolvedora, não do Radar GTA 6.</p>
+        <a href="https://www.youtube.com/@patrikluan-y6h" rel="noopener noreferrer" target="_blank">Conheça nosso canal no YouTube →</a>
+        <small>O player do YouTube é carregado somente quando você clica para assistir.</small>
+      </div>
     </div>
   </section>
 
@@ -324,5 +424,6 @@ footer .footer-social:hover{text-decoration:underline}
   <a class="footer-social" href="https://www.tiktok.com/@radargtavibr_" target="_blank" rel="noopener noreferrer" aria-label="TikTok oficial do Radar GTA 6"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v10.5a4.5 4.5 0 1 1-4.5-4.5"/><path d="M14 3c0 3.3 2.7 6 6 6"/></svg> TikTok · @radargtavibr_</a>
   <a class="footer-social" href="https://www.youtube.com/@patrikluan-y6h" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Radar GTA 6"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg> YouTube · @patrikluan-y6h</a>
 </footer>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
