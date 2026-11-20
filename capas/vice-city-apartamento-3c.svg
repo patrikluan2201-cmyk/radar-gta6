@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Capa ilustrada: APARTAMENTO 3C">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#13122a"/><stop offset=".56" stop-color="#272045"/><stop offset="1" stop-color="#101c32"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9679ff"/><stop offset="1" stop-color="#ff7094"/></linearGradient>
+<linearGradient id="egg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0a5"/><stop offset=".7" stop-color="#fa9ca3"/><stop offset="1" stop-color="#ff7094"/></linearGradient>
+<linearGradient id="shade" x1="0" x2="1"><stop stop-color="#0b0e1e" stop-opacity=".84"/><stop offset=".58" stop-color="#0b0e1e" stop-opacity=".42"/><stop offset="1" stop-color="#0b0e1e" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#fff" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="1100" cy="0" r="325" fill="#ff7094" opacity=".12"/>
+<g transform="translate(782 44)"><rect x="23" y="35" width="405" height="500" rx="12" fill="#252039" stroke="#db6893" stroke-width="10"/><g fill="#51365a" stroke="#a0649b" stroke-width="6"><rect x="70" y="75" width="105" height="122"/><rect x="278" y="75" width="105" height="122"/><rect x="70" y="243" width="105" height="120"/><rect x="278" y="243" width="105" height="120"/></g><rect x="189" y="198" width="76" height="280" fill="#161122" stroke="#ff779f" stroke-width="9"/><rect x="197" y="208" width="60" height="54" rx="5" fill="#f38eb1"/><text x="227" y="250" font-family="Arial,sans-serif" font-size="40" text-anchor="middle" font-weight="900" fill="#21152e">3C</text><circle cx="246" cy="357" r="6" fill="#ffdc91"/><path d="M27 480h400" stroke="#e86794" stroke-width="13"/><g stroke="#fc9fc2" stroke-width="9" opacity=".5"><path d="M-7 508h490M-7 529h490"/></g></g>
+<rect width="1200" height="675" fill="url(#shade)"/>
+<path d="M0 0h1200" stroke="#ff7094" stroke-width="13"/>
+<text x="65" y="98" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="28" fill="#ff7094" letter-spacing="4">RADAR GTA 6</text>
+<path d="M65 116h305" stroke="#ff7094" stroke-width="5" opacity=".9"/>
+<text x="65" y="222" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" fill="#ffffff" opacity=".83" letter-spacing="3">SEGREDO • VICE CITY</text>
+<text x="58" y="365" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="65" fill="#ffffff" letter-spacing="-2">APARTAMENTO</text>
+<text x="58" y="460" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="83" fill="#ff7094" letter-spacing="-2">3C</text>
+<path d="M65 505h445" stroke="#9679ff" stroke-width="5" opacity=".7"/>
+<text x="65" y="568" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#e3e5f3" letter-spacing="1">NOTÍCIAS, SEGREDOS E CULTURA GAMER</text>
+<rect x="65" y="602" width="232" height="37" rx="18" fill="#ff7094"/>
+<text x="181" y="627" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="16" fill="#131525" text-anchor="middle" letter-spacing="2">LEIA NO PORTAL</text>
+</svg>
