@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Capa ilustrada: FANTASMA E OVNIS">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#13122a"/><stop offset=".56" stop-color="#272045"/><stop offset="1" stop-color="#101c32"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b58aff"/><stop offset="1" stop-color="#88e0ff"/></linearGradient>
+<linearGradient id="egg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0a5"/><stop offset=".7" stop-color="#fa9ca3"/><stop offset="1" stop-color="#88e0ff"/></linearGradient>
+<linearGradient id="shade" x1="0" x2="1"><stop stop-color="#0b0e1e" stop-opacity=".84"/><stop offset=".58" stop-color="#0b0e1e" stop-opacity=".42"/><stop offset="1" stop-color="#0b0e1e" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#fff" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="1100" cy="0" r="325" fill="#88e0ff" opacity=".12"/>
+<g transform="translate(765 85)"><circle cx="265" cy="125" r="112" fill="#a4deff" opacity=".8"/><circle cx="265" cy="125" r="100" fill="#d0efff" opacity=".45"/><path d="M110 254Q245 70 388 254" fill="#171b39" stroke="#9ce6ff" stroke-width="9"/><ellipse cx="248" cy="258" rx="220" ry="67" fill="#2a2a57" stroke="#94ddff" stroke-width="13"/><path d="m143 303-55 240h320l-60-240" fill="#7c9cff" opacity=".18"/><g fill="#ff98c5"><circle cx="86" cy="262" r="12"/><circle cx="163" cy="290" r="12"/><circle cx="252" cy="302" r="12"/><circle cx="337" cy="290" r="12"/><circle cx="412" cy="262" r="12"/></g><path d="M184 405q0-58 58-58t58 58v93l-28-20-25 22-28-22-35 20Z" fill="#e8f6ff" opacity=".90"/><ellipse cx="226" cy="407" rx="8" ry="13" fill="#263057"/><ellipse cx="267" cy="407" rx="8" ry="13" fill="#263057"/></g>
+<rect width="1200" height="675" fill="url(#shade)"/>
+<path d="M0 0h1200" stroke="#88e0ff" stroke-width="13"/>
+<text x="65" y="98" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="28" fill="#88e0ff" letter-spacing="4">RADAR GTA 6</text>
+<path d="M65 116h305" stroke="#88e0ff" stroke-width="5" opacity=".9"/>
+<text x="65" y="222" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" fill="#ffffff" opacity=".83" letter-spacing="3">MISTÉRIOS • GTA V</text>
+<text x="58" y="365" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="83" fill="#ffffff" letter-spacing="-2">FANTASMA</text>
+<text x="58" y="460" font-family="Arial Black,Arial,Helvetica,sans-serif" font-weight="900" font-size="83" fill="#88e0ff" letter-spacing="-2">E OVNIS</text>
+<path d="M65 505h445" stroke="#b58aff" stroke-width="5" opacity=".7"/>
+<text x="65" y="568" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#e3e5f3" letter-spacing="1">NOTÍCIAS, SEGREDOS E CULTURA GAMER</text>
+<rect x="65" y="602" width="232" height="37" rx="18" fill="#88e0ff"/>
+<text x="181" y="627" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="16" fill="#131525" text-anchor="middle" letter-spacing="2">LEIA NO PORTAL</text>
+</svg>
